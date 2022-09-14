@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+:root{
+    --bg-df-primary: black;
+    --bg-primary: #2d2d2d;
+    --defaut: #FFF;
+    --destak: #f06;
+    --font-primary:'Roboto', sans-serif;
+    --font-header:'Bebas Neue', cursive;
+    --font-hero:'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#titulo{
+    color: var(--destak); 
+    font-family: var(--font-primary);
+    font-size: 3rem;
+ }
+ body{
+    background-color: var(--bg-df-primary);
+    color: #fff;
+}
+header{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+header span{
+    color: var(--destak);
+}
+nav{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+    margin: 0.1rem;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.capa::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.themoviedb.org/t/p/original/h6a33REB90xue6FyEJ2JpXYyDGh.jpg);
+    position: absolute;
+    background-size: cover;
+    filter:opacity(.4);
+    z-index: -1;
+    box-shadow: inset 100px -180px 250px var(--bg-df-primary);
+}

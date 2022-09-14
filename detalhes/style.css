@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap');
+:root{
+    --bg-df-primary: black;
+    --bg-primary: #2d2d2d;
+    --defaut: #FFF;
+    --destak: #f06;
+    --font-primary:'Roboto', sans-serif;
+    --font-header:'Bebas Neue', cursive;
+    --font-hero:'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#titulo{
+    color: var(--destak); 
+    font-family: var(--font-primary);
+    font-size: 3rem;
+ }
+ body{
+    background-color: var(--bg-df-primary);
+    color: #fff;
+}
+header{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+header span{
+    color: var(--destak);
+}
+nav{
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+nav li{
+    list-style: none;
+    margin: 0.1rem;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.introducao img{
+
+    position: absolute;
+    width: 160px;
+    height: 235px;
+    left: 46px;
+    top: 94px;
+}
+.introducao::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.themoviedb.org/t/p/original/mnBZEcUKrSXzBTMuEtUP6o679iu.jpg);
+    position: absolute;
+    background-size: cover;
+    filter:opacity(.4);
+    z-index: -1;
+    box-shadow: inset 100px -180px 250px var(--bg-df-primary);
+}
+#titulo-filme{
+position: absolute;
+width: 304px;
+height: 44px;
+left: 213px;
+top: 89px;
+
+font-family: 'Montserrat';
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+/* identical to box height */
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.sinopse{
+    position: absolute;
+    height: 155px;
+    left: 211px;
+    top: 164px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.04em;
+    color: #CCCCCC;
+}
+
+.botaok{
+    background-color:var(--destak) ;
+    position: relative;
+    width: 106px;
+    height: 29px;
+    left: 14px;
+    top: 300px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: .5rem 1rem;
+    transition: box-shadow .5s ease-out;
+    text-align: center;
+    align-content: center;
+
+}
+.botaop{
+    background-color:var(--destak) ;
+    position: relative;
+    width: 106px;
+    height: 29px;
+    left: 180px;
+    top: 247px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: .5rem 1rem;
+    transition: box-shadow .5s ease-out;
+    text-align: center;
+    align-content: center;
+
+}
+.botaof{
+    background-color:var(--destak) ;
+    position: relative;
+    width: 106px;
+    height: 29px;
+    left: 350px;
+    top: 193px;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: .5rem 1rem;
+    transition: box-shadow .5s ease-out;
+    text-align: center;
+    align-content: center;
+
+}
+
+.botaok:hover{
+    box-shadow: 0 0 20px rgb(202, 200, 200);
+}
+.botaop:hover{
+    box-shadow: 0 0 20px rgb(202, 200, 200);
+}
+.botaof:hover{
+    box-shadow: 0 0 20px rgb(202, 200, 200);
+}
+
+
+#Elenco{
+    border-left: var(--destak) solid 4px;
+    padding: .5em;
+    margin: 5px;
+    position: relative;
+    width: 106px;
+    height: 29px;
+    left: 25px;
+    top: 320px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+
+}
+.participantes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.atores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    left: 20px;
+    top: 320px;
+    background-color: var(--bg-primary);
+    width: 140px;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.participantes img{
+    width: 140px;
+    border-radius: .4em;
+}
+.personagem {
+    color:#acabab;
+}
+#ficha{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    left: 713px;
+    top: 400px;
+    background-color: var(--bg-primary);
+    border-radius: 7px;
+    margin: 1rem;
+    letter-spacing: 0.05em;
+    line-height: 21px;
+}
+.ntitulo{
+    border-left: var(--destak) solid 4px;
+    padding: .3em;
+    margin: 5px;  
+}
+.ficha-tecnica p{
+    color: #CCCCCC;
+}
+.Nf{
+    margin-bottom: 20px;
+}
+.um{
+margin-bottom: 20px;
+}
+.dois{
+    margin-bottom: 20px;
+}
+.tres{
+    margin-bottom: 20px;
+}
+.quatro{
+    margin-bottom: 20px;
+}
+.cinco{
+    margin-bottom: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+#todos {
+    position: relative;
+    top: 300px;
+}
+
+.botao {
+    box-sizing: border-box;
+    margin: 20px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 20px 30px;
+    border-radius: 5px;
+    text-align: center;
+    background-color:var(--destak);
+    transition: box-shadow .5s ease-out;
+    display: flex;
+    align-items: center;
+}
+
+.botao > span {
+    margin-left: 8px;
+}
